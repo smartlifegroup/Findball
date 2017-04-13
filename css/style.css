@@ -282,7 +282,23 @@ img{width:100%;}
 .discuss_list ul li:first-child a{background:#00ADEC; color:#fff;}
 .discuss_list ul li:first-child a div{background:#122134;}
 
+/* 설정 */
+.setupbox ul li{padding:3% 4%; border-bottom:1px solid #D8D8D8; overflow:hidden; line-height:26px; font-size:14px;}
+.setupbox ul li a{display:block;}
+.setupbox ul li img{width:10px; float:right; padding:4px 0 0 5%;}
+.setupbox .switch{position: relative; float:right; display:inline-block; width: 55px; height: 26px;}
+.setupbox .switch input{display:none;}
+.setupbox .slider{position:absolute; cursor:pointer; top:0; left:7px; right:0; bottom:0; background-color:#CDCDCD; -webkit-transition: .4s; transition: .4s;}
+.setupbox .slider:before{position:absolute; content: ""; height:20px; width:20px; left:4px; bottom:3px; background-color:#fff; -webkit-transition: .4s; transition: .4s;}
+.setupbox input:checked + .slider{background-color:#E61438;}
+.setupbox input:checked + .slider:before{-webkit-transform: translateX(21px); -ms-transform: translateX(21px); transform: translateX(21px);}
+.setupbox .slider.round{border-radius:34px;}
+.setupbox .slider.round:before {border-radius:50%;}
 
+.product_detail .changebut{position:fixed; bottom:5%; width:90%; margin:0 5%;}
+.product_detail .changebut input[type="button"]{width:47.5%; color:#fff; height:36px; line-height:34px;}
+.product_detail .changebut input[type="button"].f_left{background:#E68114;}
+.product_detail .changebut input[type="button"].f_right{background:#00ADEC;}
 
 
 
