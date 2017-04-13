@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="keywords" content="음식,숙박,여행">
+    <meta name="description" content="음식,숙박,여행 정보">
+	<title>파인드볼</title>
+	<link rel="stylesheet" href="css/style.css">
+	<script src="//code.jquery.com/jquery-1.11.0.js"></script>
+    <script>
+      $( document ).ready( function() {
+        $( '.check-all' ).click( function() {
+          $( '.ab' ).prop( 'checked', this.checked );
+        } );
+      } );
+    </script>
+
+</head>
+<body>
+	<div class="wrap">
+		<!-- Header Common -->
+		<div class="header">
+		<div class="back"><a href="joinus01.html"><img src="images/arrow_left.png" alt="">뒤로</a></div>
+			<h2>회원가입</h2>
+			<!-- <div class="right_ic"><a href="index.html"><img src="images/home_ica.png" alt=""></a></div> -->
+		</div>
+		<!-- 회원가입 -->
+		<div class="pd_incon join_step">
+			<ul>
+				<li class="first"><div class="hidden"><input type="text" placeholder="닉네임 입력"><input type="button" value="중복확인"></div>
+					<p class="red_text info_text">*닉네임은 한글로 10자 이내까지 가능(변경불가)하며,<br>부적절한 닉네임은 앱사용이 제한될  수 있습니다.</p>
+				</li>
+				<li class="pic_upload">
+					<h3 class="pictitle"><img src="images/camera_ic.png" alt="camera">사진등록</h3>
+					<div class="pic_profile"><img src="images/pic_profile.png" alt=""></div>
+					<p class="red_text">19금 사진 절대 금지!</p>
+						<span>예쁘고 멋있는 사진이면 무엇이든 OK!<br>나의 멋, 내 감정을 사진으로 표현해 보세요.</span>
+				</li>
+				<li class="linetextjoin txt_ct"><input type="text" placeholder="한줄소개-현재 기분, 하고 싶은 말을 적어주세요.">
+					<p class="gray_text info_text">사진과 한줄소개는 설정 (<img src="images/setup_ic.png" alt="setup">)에서 언제든지 변경가능합니다.</p>
+				</li>
+			</ul>
+			<form class="agreebox">
+				<p><input type="checkbox" name="all" class="check-all">전체 동의하기</p>
+				<p><input type="checkbox" name="cb1" class="ab">서비스 이용약관에 동의합니다. <a href="#">[약관보기]</a></p>
+				<p><input type="checkbox" name="cb1" class="ab">개인정보취급 방침에 동의합니다. <a href="#">[약관보기]</a></p>
+				<p><input type="checkbox" name="cb1" class="ab">위치정보 이용약관에 동의합니다. <a href="#">[약관보기]</a></p>
+				<p><input type="checkbox" name="cb1" class="ab">SMS 활용 동의 <a href="#">[약관보기]</a></p>
+			</form>
+			<div class="navy_but"><input type="button" value="회원가입 완료"></div>
+		</div>
+		<!-- //회원가입 -->
+	</div>
+</body>
+</html>
