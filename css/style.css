@@ -77,6 +77,8 @@ img{width:100%;}
 .header .right_ic{position:absolute; right:4%; top:7px;}
 .header .right_ic img{width:21px;}
 
+.swiper-container {width:100%;}
+
 /* 로그인 */
 .login_join{padding:5%;}
 .login_join .joinbox{padding:1% 5%;}
@@ -336,8 +338,19 @@ img{width:100%;}
 .withdrawal_ti{background:#F3F3F3; padding:3.5% 0 4% 4%; line-height:150%; font-size:12px;}
 .out_but .f_left{background:#E61438 !important;}
 /* 신고하기 */
-.reportsection input[type="button"]{background:none !important; border:0 !important; color:#353535 !important; font-size:13px !important; line-height:20px !important; text-align:right !important;}
-.reportsection table td{border:1px solid #B7B7B7; border-radius:4px; width:25%;}
+.report_section{padding-bottom:20%;}
+.report_section input[type="button"]{background:none !important; border:0 !important; color:#353535 !important; font-size:13px !important; line-height:20px !important; text-align:right !important;}
+.report_section ul li ul li{border:1px solid #B7B7B7; border-radius:4px; float:left; width:28.5%; margin:0 2%; height:130px; position:relative;}
+.report_section ul li ul li > img{height:130px;}
+.report_section ul li ul li p{position:absolute; top:3px; right:5px; width:18px;}
+
+
+
+
+
+
+
+
 
 
 

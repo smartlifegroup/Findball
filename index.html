@@ -7,6 +7,9 @@
     <meta name="description" content="음식,숙박,여행 정보">
 	<title>파인드볼</title>
 	<link rel="stylesheet" href="css/style.css">
+	<script src="http://code.jquery.com/jquery-1.12.2.min.js"></script>
+	<!-- Main Slide CSS -->
+	<link rel="stylesheet" href="css/swiper.min.css">
 
 </head>
 <body>
@@ -33,8 +36,20 @@
 	</div>
 	<!-- //Sub Menu -->
 	<!-- Main Slide -->
-	<div class="main_slide">
-		<img src="images/main01.jpg" alt="">
+	<div class="m_slidebox">
+	<div class="mslide">
+	 <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="images/main01.jpg" alt="" /></div>
+            <div class="swiper-slide"><img src="images/main02.jpg" alt="" /></div>
+            <div class="swiper-slide"><img src="images/main03.jpg" alt="" /></div>
+            <div class="swiper-slide"><img src="images/main04.jpg" alt="" /></div>
+            <div class="swiper-slide"><img src="images/main05.jpg" alt="" /></div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+    </div>
+	</div>
 	</div>
 	<!-- //Main Slide -->
 	<div class="main_bnbox"><a href="#"><img src="images/m_bn.png" alt="banner"></a></div>
@@ -54,5 +69,15 @@
 	</div>
 	</div>
 </div>
+
+<!-- Main Slide -->
+	<script src="js/swiper.min.js"></script>
+	<script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        paginationClickable: true,
+        spaceBetween: 30
+    });
+    </script>
 </body>
 </html>
