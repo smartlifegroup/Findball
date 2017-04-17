@@ -288,10 +288,13 @@ img{width:100%;}
 .chatting_list ul li .date_del{color:#A0A0A0; font-size:11px; text-align:right; margin-top:2%;}
 .chatting_list ul li .date_del img{width:25px;}
 .menu {background: #E61438; border-radius:4px; color: #fff; font-size: 14px; padding:0 15px; line-height:30px; position: absolute; top:10px; margin-top:-4px; margin-right:7px; transform: scale(0); transition: transform 0.2s; z-index: 96; }
+.menu2{margin-top:-44px !important; border:1px solid #626161 !important; background:#fff !important; color:#626161 !important; padding:0 !important;}
+.menu2 ul li{padding:0 15px!important; line-height:26px; font-size:13px;}
+.menu2 ul li:last-child{border-bottom:0 !important;}
 .menu.show {transform: scale(1); }
 .menu.menu--right {transform-origin: top right; }
 .toggle{height:20px;}
-.material-icons {font-family: 'Material Icons'; font-weight: normal; font-style: normal; font-size: 29px; color:#A8A8A8; text-transform: none; display: inline-block; white-space: nowrap; word-wrap: normal; direction: ltr; -webkit-font-feature-settings: 'liga'; -webkit-font-smoothing: antialiased;}
+.material-icons {font-family: 'Material Icons'; font-weight: normal; font-style: normal; font-size: 29px; color:#A8A8A8; text-transform: none; display: inline-block; white-space: nowrap; word-wrap: normal; direction: ltr; -webkit-font-feature-settings: 'liga'; -webkit-font-smoothing: antialiased; cursor:pointer;}
 
 /* 댓글토론방 */
 .discuss_list ul li a{background:#EAEAEA; padding:4% 4% 4% 5%; display:block; border-bottom:1px solid #fff; overflow:hidden; line-height:33px; font-size:15px;}
