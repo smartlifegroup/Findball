@@ -31,8 +31,7 @@ input[type="button"]{border:0; border-radius:4px; width:100%; cursor:pointer; fo
 input[type="text"]{background:#fff; border:1px solid #B7B7B7; border-radius:4px; padding-left:3%; width:96%; line-height:36px; font-size:14px;}
 input[type="password"]{background:#fff; border:1px solid #B7B7B7; border-radius:4px; padding-left:3%; width:96%; line-height:36px; font-size:14px;}
 textarea{background:#fff; border:1px solid #B7B7B7; border-radius:4px; padding:3%; font-family:'Noto Sans', sans-serif; width:94%;}
-select:focus, textarea:focus, input:focus, button{outline-style:line;
-    outline-color:#ffbb00;}
+select:focus, textarea:focus, input:focus, button{outline:none;}
 img{width:100%;}
 
 ::-webkit-input-placeholder {color:#A0A0A0; font-size:14px; letter-spacing:-1px;}
@@ -53,25 +52,25 @@ img{width:100%;}
 .info_text{font-size:12.5px; letter-spacing:-1px;}
 .pd_incon{padding:5%;}
 
-.wrap{max-width:800px; margin:0 auto; min-width:320px;}
+.wrap{max-width:800px; margin:0 auto; min-width:320px; position:relative;}
 .navy_but{position:relative;}
 .navy_but input[type="button"]{text-align:center; height:48px; line-height:46px; background:#122134; color:#fff; font-weight:700; font-size:16px;}
 .navy_but img{position:absolute; right:5%; top:15px; width:11px;}
-.red_but input[type="button"]{text-align:center; height:48px; line-height:46px; background:#122134; color:#fff; font-weight:700; font-size:16px; background:#E61438; position:fixed; bottom:0; margin:5%; width:90%;}
+.red_but input[type="button"]{text-align:center; height:48px; line-height:46px; background:#122134; color:#fff; font-weight:700; font-size:16px; background:#E61438; margin:5%; width:90%;}
 
 /* Main */
 .mainall_box .main_head{background:#E61438; color:#fff; text-align:center; padding:0.5% 0 1%;}
-.mainall_box .m_tab ul li a{float:left; display:block; border-top:4px solid #D0D0D0; border-bottom:1px solid #D0D0D0; text-align:center; font-weight:700; font-size:18px; width:33.1%; padding:2% 0; background:#F6F6F6;}
+.mainall_box .m_tab ul li a{float:left; display:block; border-top:4px solid #D0D0D0; border-bottom:1px solid #D0D0D0; text-align:center; font-weight:700; font-size:20px; width:33.1%; padding:2% 0; background:#F6F6F6;}
 .mainall_box .m_tab ul li:nth-child(2) a{border-left:1px solid #D0D0D0; border-right:1px solid #D0D0D0;}
-.mainall_box .m_tab ul li.on a{color:#1C378D; border-top:4px solid #1C378D; background:#fff;}
+.mainall_box .m_tab ul li a:hover{color:#1C378D; border-top:4px solid #1C378D; background:#fff;}
 
 .nav{padding:2% 0 2% 2%; overflow:hidden;}
 .nav ul li a{display:block; float:left; margin:0 1.5%; width:16.5%;}
-.m_content{padding:3% 3% 0 3%;}
-.m_content ul li{width:48%; float:left; padding:0 1% 2% 1%;}
-.game_summary{margin:1%; font-size:12px;}
+.m_content{padding:2% 2% 4% 2%;}
+.m_content ul li{width:48%; float:left; padding:0 1% 2% 1%}
+.game_summary{font-size:12px; margin:0 1%;}
 .game_summary .titleg{background:#D8D6D8; line-height:26px; padding-left:4%; font-weight:700;}
-.game_summary .summary_g{background:#F2F2F2; padding:2% 3% 2% 4%; line-height:150%; margin-bottom:10px;}
+.game_summary .summary_g{background:#F2F2F2; padding:2% 3% 2% 4%; line-height:150%;}
 .game_summary p {width:12px; margin:3px auto;}
 
 /* Header Common */
@@ -141,7 +140,7 @@ img{width:100%;}
 .payment_step .monthly_pay li div > p{color:#939393; font-weight:normal;}
 .pay_total{background:#F4F4F4; padding:3% 5% 3% 5%; margin-top:7%; overflow:hidden; font-size:14px;}
 .pay_total .f_right{font-weight:700; font-size:20px;}
-.mgbutbot{margin:0 5%; position:absolute; bottom:5%; width:90%;}
+.mgbutbot{margin:5%; width:90%;}
 .payment_step .pay_way{overflow:hidden;}
 .payment_step .pay_way li{border:2px solid #B1B1B1; border-radius:4px; text-align:center; width:47%; height:64px; margin-top:10px; padding-top:16px;}
 .payment_step .pay_way li:hover{border:2px solid #E61438;}
@@ -154,14 +153,14 @@ img{width:100%;}
 .paybank{color:#626161; padding:5% 0 0 2%;}
 
 /* 파인드볼 힌트 */
-.lightblue{background:#DCEAF1; position:fixed; top:0; bottom:0; width:100%;}
-.hintroom{position:absolute; width:100%; min-width:320px; z-index:9;}
+.lightblue{background:#DCEAF1; width:100%;}
+.hintroom{width:100%; min-width:320px; z-index:9;}
 .hintroom .topsummary{background:#fff; padding:2% 0 2% 3%; letter-spacing:-1px;}
 .hintroom .topsummary img{width:14px; padding:4px 5px 15px;}
 .hintroom .ballseven{margin:10% 0 15%;}
 .hintroom .ballseven img{width:24%; margin:1% 2% 0 2%;}
 .hintroom .ball{text-align:center;}
-.hintroom_view{position:absolute; width:100%; min-width:320px; padding-bottom:10%;}
+.hintroom_view{width:100%; min-width:320px; padding-bottom:10%;}
 .hintroom_view .topsummary{background:#DAE7D4; padding:2% 2% 2% 3%; letter-spacing:-1.5px; border-bottom:1px solid #C9DEE9; line-height:140%;}
 .hintroom_view .topsummary i.ic01 img{width:8px; vertical-align:top; padding:4px 1px 0 3px;}
 .hintroom_view .topsummary i.ic02 img{width:12px; vertical-align:top; padding:5px 1px 0 3px;}
@@ -190,13 +189,15 @@ img{width:100%;}
 .chating_view .bluebgchat{background:#B7DEE8 !important;}
 
 /* 입력폼 하단 */
-.enter_form{position:fixed; bottom:0; left:0; right:0; width:98%; background:#EBF1DE; padding:2% 1%;}
+.enter_form{position:fixed; bottom:0; left:0; right:0; max-width:800px; margin:0 auto; width:98%; background:#ddd; padding:6px 1%;}
 .enter_form input[type="button"]{float:left; width:15%; background:#D99694; color:#fff; height:36px; line-height:34px; margin-right:1%;}
 .enter_form input[type="text"]{float:left; width:59.5%; height:33px !important; border:0;}
 .enter_form input[type="text"].searchtext{float:left; width:63%; height:33px !important; border:0;}
 .enter_form input[type="submit"]{float:right; width:20%; background:#E61438; color:#fff; height:36px; line-height:35px;}
 .enter_form input[type="button"].search{float:right; width:15%; background:#E61438; color:#fff; height:36px; line-height:34px; margin-right:1%;}
 .enter_form input[type="button"].location{float:right; width:15%; background:#00AC00; color:#fff; height:36px; line-height:34px; margin-right:1%;}
+.enter_form .picicon a{float:left; width:15%; display:block; background:#b1b1b1; height:36px;margin-right:1%; border-radius:4px; text-align:center;}
+.enter_form .picicon a img{width:24px; vertical-align:top; padding-top:9px;}
 .enter_form .searchall{width:75.5% !important;}
 .enter_form textarea{height:29px !important; border:0; padding:7px 0 0 3%; width:60%; float:left;}
 
@@ -209,8 +210,8 @@ img{width:100%;}
 .travelerlist .tophead div img{width:11px;}
 .travelerlist .tophead p{width:35px; padding-left:3%;}
 .travelerlist .tophead input[type="button"]{float:right; width:33%; background:#11CAA5; color:#fff; text-align:center; line-height:36px; font-weight:700; font-size:15px; letter-spacing:-1px}
-.travelerlist .tophead .reviewt{float:right; width:20%;}
-.travelerlist .tophead .appproduct {width:25% !important;}
+.travelerlist .tophead .reviewt{float:right; width:70px;}
+/* .travelerlist .tophead .appproduct {width:25% !important;} */
 .travelerlist .tophead .reviewt img{width:100%;}
 .travelerlist .pdtop{padding-top:1.2%;}
 
@@ -244,16 +245,25 @@ img{width:100%;}
 /* 상품 상세보기 */
 .product_detail ul li{padding:3% 4% 3% 4%; border-bottom:1px dashed #D8D8D8; overflow:hidden;}
 .product_detail ul li label{float:left; line-height:30px;}
-.product_detail ul li div{background:#FDEADA; float:right; border-radius:4px; width:68%; text-align:center; padding:2% 4%;}
+.product_detail ul li div{background:#fff; float:right; border-radius:4px; width:68%; text-align:center; padding:2% 4%; border:1px solid #ddd; -webkit-box-shadow: inset 0px 0px 7px 0px rgba(50, 50, 50, 0.12);
+-moz-box-shadow:    inset 0px 0px 7px 0px rgba(50, 50, 50, 0.12);
+box-shadow:         inset 0px 0px 7px 0px rgba(50, 50, 50, 0.12);}
 .product_detail ul li div a{color:#008EED;}
 .product_detail .contentbox{padding:4%;}
 .product_detail .contentbox h4{padding-bottom:4%; font-size:14px;}
-.product_detail .contentbox h4 input{background:#FDEADA; border:0; text-align:center; padding-left:0; width:100%;}
+.product_detail .contentbox h4 input{background:#fff; border:0; text-align:center; padding-left:0; width:100%; border:1px solid #ddd; -webkit-box-shadow: inset 0px 0px 7px 0px rgba(50, 50, 50, 0.12);
+-moz-box-shadow:    inset 0px 0px 7px 0px rgba(50, 50, 50, 0.12);
+box-shadow:         inset 0px 0px 7px 0px rgba(50, 50, 50, 0.12);}
 .product_detail .contentbox p{color:#626161; padding:2% 0;}
 .product_detail ul li div.inputbox{padding:0 4% !important;}
+.product_detail ul li div.inputboxradio{padding:0 4% !important; background:#fff !important;}
+.product_detail ul li div.inputboxradio input[type="radio"]{vertical-align:top; margin:3px 5px 0 0; width:16px; height:16px;}
+.product_detail ul li .mgtopin{margin-top:3px;}
 .product_detail ul li div input{background:none; border:0; text-align:center; padding-left:0;}
 .product_detail ul li div p{padding-bottom:2%;}
-.product_detail ul li select{background-color:#FDEADA; width:76%; float:right; border:0; text-align:center;}
+.product_detail ul li select{background-color:#fff; width:76%; float:right; border:0; text-align:center; border:1px solid #ddd; -webkit-box-shadow: inset 0px 0px 7px 0px rgba(50, 50, 50, 0.12);
+-moz-box-shadow:    inset 0px 0px 7px 0px rgba(50, 50, 50, 0.12);
+box-shadow:         inset 0px 0px 7px 0px rgba(50, 50, 50, 0.12);}
 .product_detail ul li .age{font-size:16px;}
 
 /* 댓글 */
@@ -261,7 +271,7 @@ img{width:100%;}
 .replybox{border-top:1px solid #ccc; background:#F9F9F9;}
 .replybox > div{padding:2% 0 1.5% 3%;}
 .replybox ul li{border-bottom:1px solid #ccc; overflow:hidden; padding:2% 4% 2.5% 4%;}
-.replybox .profile{width:12%; margin-right:3%; margin-top:2px;}
+.replybox .profile{width:40px; margin-right:3%; margin-top:2px;}
 .replybox ul li .intextbox{color:#626161; width:70%; line-height:130%;}
 .replybox ul li .intextbox p{color:#353535; padding-bottom:3px; font-weight:700;}
 .replybox ul li .edit{float:right; width:20px;}
@@ -277,7 +287,7 @@ img{width:100%;}
 .reportbox{padding:30% 5% 0 5%;}
 .reportbox div{width:62%; font-size:12px; line-height:150%;}
 .reportbox img{float:right; width:30%; margin-top:4%;}
-.reportboxtwo{font-size:12px; line-height:150%; position:fixed; bottom:16%; padding:0 5%;}
+.reportboxtwo{font-size:12px; line-height:150%;padding:5%;}
 
 /* 채팅 리스트 */
 .chatting_list ul li a{display:block; padding:3% 4%; border-bottom:1px solid #D8D8D8; overflow:hidden;}
@@ -316,7 +326,7 @@ img{width:100%;}
 .setupbox .slider.round{border-radius:34px;}
 .setupbox .slider.round:before {border-radius:50%;}
 
-.changebut{position:fixed; bottom:5%; width:90%; margin:0 5%;}
+.changebut{position:fixed; bottom:5%; width:90%; margin:0 5%; max-width:660px;}
 .changebut input[type="button"]{width:47.5%; color:#fff; height:36px; line-height:34px;}
 .changebut input[type="button"].f_left{background:#E68114;}
 .changebut input[type="button"].f_right{background:#00ADEC;}
@@ -336,8 +346,8 @@ img{width:100%;}
 /* 고객센터 */
 .helpbox ul li a{display:block; border:1px solid #E61438; padding:4% 5%; margin-bottom:3.5%; font-weight:700; font-size:14px;}
 .helpbox ul li a img{width:10px; float:right;}
-.helppolice{position:fixed; bottom:0; background:#B0D3DE; height:45px; line-height:45px; text-align:center; width:100%; font-weight:700;}
-.helpcouns{position:fixed; bottom:45px; background:#BFB0BF; height:45px; line-height:45px; text-align:center; width:100%; font-weight:700;}
+.helppolice{position:fixed; bottom:0; background:#B0D3DE; height:45px; line-height:45px; text-align:center; max-width:800px; width:100%; font-weight:700;}
+.helpcouns{position:fixed; bottom:45px; background:#BFB0BF; height:45px; line-height:45px; text-align:center; max-width:800px; width:100%; font-weight:700;}
 
 /* 공지사항 */
 .noticebox .dropdown {width: 100%;}
@@ -361,7 +371,8 @@ img{width:100%;}
 .report_section ul li ul li > img{height:130px;}
 .report_section ul li ul li p{position:absolute; top:3px; right:5px; width:18px;}
 
-
+/* footer */
+.footer{font-size:12px; line-height:140%; padding:4% 0 3% 5%; border-top:1px solid #e8e8e8; color:#707070;}
 
 
 
@@ -377,8 +388,6 @@ img{width:100%;}
 
 
 @media only screen and (max-width:480px){
-
-}
-@media only screen and (max-width:380px){
-
+	.red_but input[type="button"]{text-align:center; height:48px; line-height:46px; background:#122134; color:#fff; font-weight:700; font-size:16px; background:#E61438; position:fixed; bottom:0; margin:5%; width:90%; }
+	.mgbutbot{margin:0 5%; position:fixed; bottom:5%; width:90%;}
 }

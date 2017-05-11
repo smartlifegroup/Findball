@@ -13,21 +13,28 @@
 <div class="wrap">
 <!-- Header Common -->
 <div class="header">
-<div class="back"><a href="#"><img src="images/arrow_left.png" alt="">뒤로</a></div>
+<div class="back"><a href="stay_list.html"><img src="images/arrow_left.png" alt="">뒤로</a></div>
 	<h2>숙박 등록</h2>
 <div class="right_ic"><a href="index.html"><img src="images/home_ic.png" alt="Home"></a></div>
 <!-- //Header Common -->
 </div>
 	<!-- 숙박 등록 -->
 	<div class="travelerlist hintroom_view">
-		<div class="topsummary gray_text">
+		<!-- <div class="topsummary gray_text">
+				내 가게 또는 친구의 가게를 예쁘게 올려보세요.<br><span class="red_text">(1년에 12,000원 단 한번의 구매로 1년간 등록완료-2회제공)</span>
+			</div> -->
+			<div class="tophead hidden">
+			<div class="f_left gray_text">
 				내 가게 또는 친구의 가게를 예쁘게 올려보세요.<br><span class="red_text">(1년에 12,000원 단 한번의 구매로 1년간 등록완료-2회제공)</span>
 			</div>
+			<div class="reviewt"><a href="payment01.html"><img src="images/pay_buts.png" alt="결제하기"></a></div>
+		</div>
 		<div class="product_detail">
 			<ul>
 				<li><label for="">상호명</label><div class="inputbox"><input type="text" placeholder="상호명을 입력해주세요"></div></li>
 				<li><label for="">주소</label>
-					<div class="inputbox"><input type="text" placeholder="주소를 정확히 입력해주세요"><p class="red_text">(위치 조회가 가능하려면)</p></div>
+					<div class="inputbox"><input type="text" placeholder="신 주소로 주소를 정확히 기입해주세요"><p class="red_text">(ex) 서울시  서초구 강남대로 65길 1)</p></div>
+					<div class="inputbox mgtopin"><input type="text" placeholder="상세주소를 입력해주세요"><p class="red_text">(ex) 강남빌딩 1층 101호)</p></div>
 
 				</li>
 				<li><label for="">연락처</label><div class="inputbox"><input type="text" placeholder="-없이 입력해주세요"></div></li>
@@ -57,7 +64,7 @@
 	</div>
 	<!-- 등록 버튼 -->
 	<form class="enter_form">
-		<input type="button" value="사진">
+		<p class="picicon"><a href="#"><img src="images/pic_icon.png" alt=""></a></p>
 		<textarea name="" id="" cols="30" rows="10" placeholder="글을 입력해주세요"></textarea>
 		<input type="submit" value="등록">
 	</form>
